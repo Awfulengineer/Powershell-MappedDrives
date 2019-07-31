@@ -6,4 +6,4 @@
             DriveLetter = $_.PSChildName
             RemotePath = (Get-ItemProperty $_.PSPath).RemotePath
          }
-    } | Export-Csv '\\BE-DC01\MappedDrives\MappedDrives.csv' -Append -NoTypeInformation
+    } | Export-Csv '\\Hostname\MappedDrives\MappedDrives.csv' -Append -NoTypeInformation
